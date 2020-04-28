@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" style="background-color:#333">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/">
+            <img src="{% static 'assets/images/logo2-light.png' %}" alt="" class="nav-image logo-default" style="width:120px;margin-bottom:.7%;margin-left:-1%;">
+            <img src="{% static 'assets/images/logo2-light.png' %}" alt="" class="nav-image logo-scroll" style="width:120px;margin-bottom:.7%;margin-left:-1%;">
+         </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse navlo">
+         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" onmouseover="revamp()">About<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <!-- <li><a href="https://stab-iitb.org/vision-of-stab-team-2014-15">Vision</a></li> -->
+                  <li><a href="/hall-of-fame">Hall Of Fame</a></li>
+                  <li><a href="/alumni">Alumni</a></li>
+                  <li><a href="/facad">Faculty Advisors/Mentors</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clubs <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a href="/aeromodelling-club">Aeromodelling Club</a></li>
+                  <li><a href="/biotech">Biotech Club</a></li>     
+                  <li><a href="https://enclub.github.io/home/">Energy Club</a></li>
+                  <li><a href="/erc">Electronics and Robotics Club</a></li>
+                  <li><a href="https://www.facebook.com/HamclubIITB/">HAM Club</a></li>
+                  <li><a href="/krittika/">Krittika</a></li>
+                  <li><a href="http://mnp-club.github.io/">Math And Physics Club</a></li>
+                  <li><a href="http://www.wncc-iitb.org/">Web And Coding Club</a></li>
+               </ul>
+            </li>
+            <li><a href="/srg">Student Reading Group</a></li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tech Teams <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a href="https://rakshakiitb.github.io/">Team Rakshak</a></li>
+                  <li><a href="http://www.iitbracing.org/">IITB Racing</a></li>
+                  <li><a href="http://www.auv-iitb.org/">AUV IITB</a></li>
+                  <li><a href="http://www.aero.iitb.ac.in/pratham/">Pratham</a></li>
+                  <li><a href="https://iitbmartian.github.io/">Mars Rover</a></li>
+                  <li><a href="http://www.umiciitb.com/">Innovation Cell</a></li>
+                  <li><a href="http://teamshunya.in/">Team Shunya</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IITB Corner <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a href="/lightsaber">Light Saber</a></li>
+                  <li><a href="/gcrankings-2017-18">Tech GC Ranking</a></li>
+                                 </ul>
+            </li>
+            <li><a href="/team-2019-20">Team 2019-20</a></li>
+            <!--<li><a href="/login" class="btn btn-rounded btn-primary">Login</a></li>-->
+         </ul>
+      </div>
+      <!--/.nav-collapse -->
+   </div>
+   <!--/.container-fluid -->
+</nav>

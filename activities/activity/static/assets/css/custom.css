@@ -1,0 +1,74 @@
+@media only screen and (max-device-width: 768px) {
+  footer .row .logos{
+    text-align:center;
+  }
+  footer .row .contact{
+    text-align:center;
+  }
+  footer .copyrit{
+    text-align:center;
+  }
+}
+@media only screen and (min-device-width: 770px) {
+  footer .row{
+    padding-left:60px;
+    padding-right:60px;
+  }
+  footer .row .contact{
+    margin-top:20px;text-align: center;
+  }
+  footer .copyrit{
+    text-align: right;padding-top:40px;
+  }
+}
+
+
+.navbar-default.navbar-transparent.shrink .navbar-nav > li > a {
+ color: #fbfbfb;
+}
+
+#navbar > ul {
+ border-bottom: 2px solid #f5f5f5;
+ border-radius: 10px;
+} 
+
+#navbar > ul >li:hover{
+ color: #000;
+ background-color:#FFF;
+ border-color:#FFF;
+} 
+
+#navbar > ul >li:hover > a:link{
+ color:#000;
+ letter-spacing: 1px;
+}
+
+#navbar > ul >li:hover > ul{
+ border-left : 2px solid grey;
+ border-bottom : 2px solid grey;
+ padding: 10px 0 10px 0;
+}
+
+#navbar > ul >li:hover > ul > li > a{
+ height: 40px;
+ padding:0 5px 0 10px;
+ line-height: 40px;
+}
+
+#navbar > ul >li:hover > ul > li:hover > a{
+ border-right : 2px solid grey;
+ height: 50px;
+ line-height: 50px;
+}
+
+.navbar-default.navbar-transparent.shrink .navbar-nav > li > a {
+ color: #fbfbfb;
+}
+header>h1{
+  color:grey;
+  text-align:center;
+  display:block;
+}
+.navbar {
+ background-color: #555 !important;
+}
