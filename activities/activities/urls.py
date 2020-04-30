@@ -19,6 +19,6 @@ import activity.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', activity.views.index),
-    path('activity/', include('activity.urls') )
+    path('', activity.views.index ),
+    path('activity/', include('activity.urls') ),
 ]

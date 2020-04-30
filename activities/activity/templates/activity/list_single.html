@@ -11,46 +11,25 @@ Current Activities
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="active item">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default">
-								<div class="panel-heading">Code in Quarantine</div>
-								<div class="panel-body">
-									<img src="{% static  'activity/CiQ_Poster.png' %}" class="img-thumbnail">
-								</div>
-								<div class="panel-footer">
-									<p><strong>Club</strong>: Web and Coding Club</p>
-									<p><strong>Start Date</strong>: 6th April 2020</p>
-									<p><strong>End Date</strong>: 31st May 2020</p>
-									<p>
-										<a href="https://github.com/wncc/CodeInQuarantine/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="https://www.facebook.com/wncc.iitb/photos/a.687832654603036/3097169737002637/?type=3&theater" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% include 'components/events/one.html' %}
 				</div>
 				<div class="item">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default">
-								<div class="panel-heading">Code in Quarantine</div>
-								<div class="panel-body">
-									<img src="{% static  'activity/CiQ_Poster.png' %}" class="img-thumbnail">
-								</div>
-								<div class="panel-footer">
-									<p><strong>Club</strong>: Web and Coding Club</p>
-									<p><strong>Start Date</strong>: 6th April 2020</p>
-									<p><strong>End Date</strong>: 31st May 2020</p>
-									<p>
-										<a href="https://github.com/wncc/CodeInQuarantine/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-										<a href="https://www.facebook.com/wncc.iitb/photos/a.687832654603036/3097169737002637/?type=3&theater" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% include 'components/events/two.html' %}
+				</div>
+				<div class="item">
+					{% include 'components/events/three.html' %}
+				</div>
+				<div class="item">
+					{% include 'components/events/four.html' %}
+				</div>
+				<div class="item">
+					{% include 'components/events/five.html' %}
+				</div>
+				<div class="item">
+					{% include 'components/events/six.html' %}
+				</div>
+				<div class="item">
+					{% include 'components/events/seven.html' %}
 				</div>
 			</div>	
 		</div>	

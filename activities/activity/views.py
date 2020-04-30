@@ -6,3 +6,6 @@ from django.template import RequestContext
 
 def index(request):
 	return render( request, 'activity/list.html')
+
+def single(request):
+	return render( request,'activity/list_single.html')

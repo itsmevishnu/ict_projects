@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<strong>
+					{% block title %}
+					{% endblock %}
+				</strong>
+			</div>
+			<div class="panel-body">
+				<img src="{% block image%} {% endblock %}" class="img-thumbnail">
+			</div>
+			<div class="panel-footer">
+				<p><strong>Club</strong>: {% block club %} {% endblock %}</p>
+				<p><strong>Start Date</strong>: {% block start_date %} {% endblock %}</p>
+				<p><strong>End Date</strong>: {% block end_date %} {% endblock %}</p>
+				<p><strong>Contact Person</strong>: {% block conact_person %} {% endblock %}</p>
+				<p><strong>Email</strong>: {% block email %} {% endblock %}</p>
+				<p>
+					<a href="{% block web %} {% endblock %}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+					<a href="{% block facebook %} {% endblock %}" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
