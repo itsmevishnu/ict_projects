@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Chart
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">	
+			<div class="row">
+					<canvas id="myChart" width="40vh" height="40vh"></canvas>
+			</div>
+	</div>	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	<script type="text/javascript">
+		var points = [
+		{
+				label: 'Game 1',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#FF5733'
+		},
+		{
+				label: 'Game 2',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#C70039'
+		},
+		{
+				label: 'Game 3',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#FFC300'
+		},
+		{
+				label: 'Game 4',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#22EBDC'
+		},
+		{
+				label: 'Game 5',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#BD26A1'
+		},
+		{
+				label: 'Game 6',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#DA4E72'
+		},
+		{
+				label: 'Game 7',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#2D5CA0'
+		},
+		{
+				label: 'Game 8',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#35CA1E'
+		},
+		{
+				label: 'Game 9',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#EB242D'
+		},
+		{
+				label: 'Game 10',
+				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
+				backgroundColor: '#284F04'
+		}
+		]
+		var ctx = document.getElementById('myChart');
+		var chart = new Chart(ctx, {
+			type : 'bar',
+			responsive: true,
+			data: {
+				labels: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10', 'H11', 'H12'],
+				datasets: points
+			},
+			options: {
+				title: {
+					display: true,
+					text: 'GC Chart'
+				},
+				scales: {
+					yAxes: [{
+						stacked: true
+					}],
+					xAxes: [{
+						stacked: true
+					}]
+				},
+				animation: {
+					duration:2000,
+					easing: 'easeInOutBounce'
+				}
+			}
+		});
+	</script>
+</body>
+</html>
