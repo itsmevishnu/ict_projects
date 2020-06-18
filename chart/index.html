@@ -8,62 +8,67 @@
 </head>
 <body>
 	<div class="container">	
-			<div class="row">
-					<canvas id="myChart" width="40vh" height="40vh"></canvas>
-			</div>
+		<div class="row">
+			<canvas id="myChart" width="40vh" height="40vh"></canvas>
+		</div>
 	</div>	
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 	<script type="text/javascript">
 		var points = [
 		{
-				label: 'Game 1',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#FF5733'
+			label: "Biotech",
+			data : [0,1, 1, 18, 0, 24, 1, 12, 30, 1, 0, 0, 0, 0, 0, 0 ],
+			backgroundColor: '#FF5733'
 		},
 		{
-				label: 'Game 2',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#C70039'
+			label: "Jhatka",
+			data: [0, 24, 12, 0, 0, 30, 0, 6, 18, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#C70039'
 		},
 		{
-				label: 'Game 3',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#FFC300'
+			label: "Astro",
+			data: [0, 30, 0, 6, 24, 2, 18, 12, 2, 1, 1, 0, 0, 0, 0, 0],
+			backgroundColor: '#FFC300'
 		},
 		{
-				label: 'Game 4',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#22EBDC'
+			label: "Logic",
+			data: [0, 30, 1, 1, 18, 24, 6, 1, 1, 12, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#22EBDC'
 		},
 		{
-				label: 'Game 5',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#BD26A1'
+			label: "Web Dev",
+			data: [0, 24, 12, 36, 0, 48, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#BD26A1'
 		},
 		{
-				label: 'Game 6',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#DA4E72'
+			label: "PhysX",
+			data: [0, 0, 0, 36, 0, 24, 60, 48, 0, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#DA4E72'
 		},
 		{
-				label: 'Game 7',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#2D5CA0'
+			label: "Data Analysis",
+			data: [0, 36, 0, 24, 60, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#2D5CA0'
 		},
 		{
-				label: 'Game 8',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#35CA1E'
+			label: "Competative Coding",
+			data: [0, 12, 0, 1, 30, 6, 24, 0, 18, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#35CA1E'
 		},
 		{
-				label: 'Game 9',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#EB242D'
+			label: "Astrophotogrphy",
+			data: [0, 6, 0, 18, 1, 24, 12, 0, 30, 0, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#EB242D'
 		},
 		{
-				label: 'Game 10',
-				data:[5, 10, 13, 11, 2, 3,14, 18, 3, 6, 10, 3],
-				backgroundColor: '#284F04'
+			label: "Capture the flag",
+			data: [1, 18, 1, 6, 30, 4, 12, 2, 24, 2, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#284F04'
+		},
+		{
+			label: "Documentation",
+			data: [0, 52, 14, 58, 0, 46, 71, 43, 16, 0, 0, 0, 0, 0, 0],
+			backgroundColor: '#ff6699'
 		}
 		]
 		var ctx = document.getElementById('myChart');
@@ -71,13 +76,13 @@
 			type : 'bar',
 			responsive: true,
 			data: {
-				labels: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10', 'H11', 'H12'],
+				labels: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10', 'H11', 'H12', 'H13', 'H14', 'H15', 'H16'],
 				datasets: points
 			},
 			options: {
 				title: {
 					display: true,
-					text: 'GC Chart'
+					text: 'Tech GC Points'
 				},
 				scales: {
 					yAxes: [{
